@@ -9,6 +9,7 @@ def square_root(number: int) -> float:
 
 def square(number: int) -> int:
     # TODO completer la fonction
+   import math
     return math.pow(number, 2)
 
 
@@ -19,4 +20,3 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-    
