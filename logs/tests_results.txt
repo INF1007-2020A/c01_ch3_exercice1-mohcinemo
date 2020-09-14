@@ -1,14 +1,21 @@
-test_upper_case_names (__main__.TestExercice) ... ERROR
+test_square (__main__.TestExercice) ... ok
+test_square_root (__main__.TestExercice) ... FAIL
 
 ======================================================================
-ERROR: test_upper_case_names (__main__.TestExercice)
+FAIL: test_square_root (__main__.TestExercice)
 ----------------------------------------------------------------------
 Traceback (most recent call last):
-  File "test_exercice.py", line 17, in test_upper_case_names
-    output = list(map(exercice.majuscule, self.words))
-AttributeError: module 'exercice' has no attribute 'majuscule'
+  File "test_exercice.py", line 33, in test_square_root
+    'Failed to calculate square roots'
+AssertionError: Lists differ: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, [342 chars], 99] != [0.0, 1.0, 1.4142135623730951, 1.7320508075[1698 chars]0662]
+
+First differing element 2:
+2
+1.4142135623730951
+
+Diff is 2807 characters long. Set self.maxDiff to None to see it. : Failed to calculate square roots
 
 ----------------------------------------------------------------------
-Ran 1 test in 0.000s
+Ran 2 tests in 0.052s
 
-FAILED (errors=1)
+FAILED (failures=1)
